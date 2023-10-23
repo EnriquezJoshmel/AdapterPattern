@@ -1,0 +1,11 @@
+package adapterPattern;
+
+public class Laptop {
+
+
+    public String chargemethod(){
+        return "Your laptop is now charging.";
+    }
+
+
+}
