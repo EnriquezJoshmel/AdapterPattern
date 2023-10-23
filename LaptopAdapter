@@ -1,0 +1,21 @@
+package adapterPattern;
+
+public class LaptopAdapter implements PowerOutlet{
+
+    private Laptop laptop;
+
+    public LaptopAdapter(Laptop laptop){
+        this.laptop = laptop;
+    }
+
+
+    public String charging(){
+        return laptop.chargemethod();
+    }
+
+
+    @Override
+    public String plugIn() {
+        return laptop.chargemethod();
+    }
+}
