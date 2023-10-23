@@ -1,0 +1,10 @@
+package adapterPattern;
+
+public class Refrigerator {
+
+    public String startCooling(){
+        return "Your refrigerator is starting cool.";
+    }
+
+
+}
