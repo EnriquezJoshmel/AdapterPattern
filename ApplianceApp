@@ -1,0 +1,24 @@
+package adapterPattern;
+import java.util.Scanner;
+public class ApplianceApp {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        Laptop laptop = new Laptop();
+        PowerOutlet lappy = new LaptopAdapter(laptop);
+
+        Refrigerator refrigerator = new Refrigerator();
+        PowerOutlet reffy = new RefrigeratorAdapter(refrigerator);
+
+        SmartphoneCharger smartphoneCharger = new SmartphoneCharger();
+        PowerOutlet phony = new SmartphoneAdapter(smartphoneCharger);
+
+
+        System.out.println(lappy.plugIn());
+        System.out.println(reffy.plugIn());
+        System.out.println(phony.plugIn());
+
+
+
+    }
+}
