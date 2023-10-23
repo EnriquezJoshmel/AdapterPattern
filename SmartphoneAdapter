@@ -1,0 +1,19 @@
+package adapterPattern;
+
+public class SmartphoneAdapter implements PowerOutlet{
+
+    private SmartphoneCharger smartphone;
+
+    public SmartphoneAdapter(SmartphoneCharger smartphone){
+        this.smartphone = smartphone;
+    }
+
+    public String chargePhone(){
+        return smartphone.chargePhone();
+    }
+
+    @Override
+    public String plugIn() {
+        return smartphone.chargePhone();
+    }
+}
